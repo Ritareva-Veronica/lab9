@@ -13,7 +13,6 @@ all: main.c list.c matrix.c
 	echo $(ARCH)
 	echo $(CROSS_COMPILE)
 	
-	
 install: all
 	@if [-d $(INST_DIR) ]; \
 	then \

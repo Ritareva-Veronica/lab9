@@ -34,7 +34,6 @@ void ShowList(){
   }
   printf("\n"); 
 }
-
 void DestroyList(){
   struct ListItem *Item, *Item2;
   printf(" Deleting a list.\n");
@@ -46,7 +45,6 @@ void DestroyList(){
   }
   Root = NULL; 
 }
-
 void ListFunction(){
   printf("Demonstration of working with a list.\n");
   CreateList();
