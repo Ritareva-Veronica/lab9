@@ -5,9 +5,7 @@ struct ListItem {
   int Value;
   struct ListItem* Next;
 };
-
 struct ListItem* Root;
-
 void AddNode( int NewValue ){
   struct ListItem* Item;
   Item = (struct ListItem*) malloc( sizeof(struct ListItem) );
@@ -15,7 +13,6 @@ void AddNode( int NewValue ){
   Item->Next = Root; 
   Root = Item; 
 }
-
 void CreateList() {
   printf(" Creating a list.\n");
   Root = NULL;
@@ -25,7 +22,6 @@ void CreateList() {
   AddNode( 2 );
   AddNode( 1 ); 
 }
-
 void ShowList(){
   struct ListItem* Item;
   Item = Root;
